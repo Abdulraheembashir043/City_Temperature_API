@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #AAAA39;
+}
+
+main {
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 15px 0 0;
+  width: 90%;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+main h1 {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+main .user {
+  margin-bottom: 10px;
+}
+
+main .user input {
+  padding: 5px;
+  outline: 0;
+  border: 2px solid black;
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 80%;
+  text-align: center;
+}
+
+main .user input::-webkit-input-placeholder {
+  color: rgba(128, 128, 128, 0.473);
+}
+
+main .user input:-ms-input-placeholder {
+  color: rgba(128, 128, 128, 0.473);
+}
+
+main .user input::-ms-input-placeholder {
+  color: rgba(128, 128, 128, 0.473);
+}
+
+main .user input::placeholder {
+  color: rgba(128, 128, 128, 0.473);
+}
+
+main .buttons {
+  margin-bottom: 10px;
+}
+
+main .buttons button {
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+main .display-result #result-title {
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+main .display-result .temperature {
+  color: #020200;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+main .display-result #description {
+  color: #575594;
+  color: #020200;
+}
+/*# sourceMappingURL=style.css.map */
