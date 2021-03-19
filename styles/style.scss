@@ -65,11 +65,22 @@ main {
       grid-template-columns: 1fr 1fr 1fr;
       font-weight: bold;
       font-size: 1.5em;
+
+      #fahrenheit {
+        border-left: 2px solid #FFF;
+        border-right: 2px solid #FFF;
+      }
     }
 
     #description {
-      color: #575594;
       color: #020200;
     }
+  }
+
+  #error {
+    color: rgb(224, 52, 52);
+    font-weight: bold;
+    font-size: 1.1em;
+    display: none;
   }
 }

@@ -80,8 +80,19 @@ main .display-result .temperature {
   font-size: 1.5em;
 }
 
+main .display-result .temperature #fahrenheit {
+  border-left: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+}
+
 main .display-result #description {
-  color: #575594;
   color: #020200;
+}
+
+main #error {
+  color: #e03434;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
