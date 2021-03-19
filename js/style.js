@@ -35,8 +35,8 @@ function fetchAPI(cityName) {
     description.innerHTML = data.weather[0].main;
     image.src = `https://api.openweathermap.org/img/w/${data.weather[0].icon}.png`;
     
-    kelvin.innerHTML = Math.floor(val) + ` &deg;<br>Kelvin`;
-    fahrenheit.innerHTML = Math.floor(9 / 5 * (val - 273) + 32) + ' &deg;<br>Fahrenheit';
-    celsius.innerHTML = Math.floor(val - 273.15) + ' &deg;<br>Celsius';
+    kelvin.innerHTML = Math.floor(val) + ` &degK`;
+    fahrenheit.innerHTML = Math.floor(9 / 5 * (val - 273) + 32) + ' &deg;F';
+    celsius.innerHTML = Math.floor(val - 273.15) + ' &deg;C';
   })
 }
