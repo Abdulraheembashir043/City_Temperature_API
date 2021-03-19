@@ -95,4 +95,10 @@ main #error {
   font-size: 1.1em;
   display: none;
 }
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 30%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -21,6 +21,7 @@ clear.addEventListener('click', () => {
   update();
   city.value = '';
   errMsg.style.display = 'none';
+  btn.style.marginBottom = '10px';
 })
 
 function fetchAPI(cityName) {
@@ -45,8 +46,7 @@ function fetchAPI(cityName) {
       kelvin.innerHTML = Math.floor(val) + ` &degK`;
       fahrenheit.innerHTML = Math.floor(9 / 5 * (val - 273) + 32) + ' &deg;F';
       celsius.innerHTML = Math.floor(val - 273.15) + ' &deg;C';
-    } else if(data.cod === "404") {
-      console.log('not correct');
+    } else {
       update();
       errMsg.style.display = 'block';
     }
