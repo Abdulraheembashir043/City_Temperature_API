@@ -26,17 +26,17 @@ clear.addEventListener('click', () => {
 })
 
 function fetchAPI(cityName) {
-  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=2b2b54c2024825996a3e29b19657b621`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=2b2b54c2024825996a3e29b19657b621`)
   .then((response) => response.json())
   .then((data) => {
 
     let val = data.main.temp;
 
     description.innerHTML = data.weather[0].main;
-    image.src = `http://api.openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    image.src = `https://api.openweathermap.org/img/w/${data.weather[0].icon}.png`;
     
     kelvin.innerHTML = Math.floor(val) + ` &deg;<br>Kelvin`;
-    fahrenheit.innerHTML = Math.floor(val - 273.15) + ' &deg;<br>Fahrenheit';
-    celsius.innerHTML = Math.floor(9 / 5 * (val - 273) + 32) + ' &deg;<br>Celsius';
+    fahrenheit.innerHTML = Math.floor(9 / 5 * (val - 273) + 32) + ' &deg;<br>Fahrenheit';
+    celsius.innerHTML = Math.floor(val - 273.15) + ' &deg;<br>Celsius';
   })
 }
